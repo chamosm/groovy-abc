@@ -12,5 +12,10 @@ class PersonA extends PersonG4 {
         def currentProfile() {
             super.currentProfile()
 			println addr.show()
+			/*
+			 *  Addressオブジェクトの属性postalCodeの直接参照ではなく、
+			 *  Address#getPostalCode()が呼び出されているとを確認する。
+			 */
+			println addr.postalCode
         }
 }
